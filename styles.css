@@ -37,7 +37,6 @@ html, body {
     padding: 20px;
     border: 1px solid #888;
     width: 50% !important;
-    height: 50% !important;
     animation-name: animatetop;
     animation-duration: 0.4s;
 }
