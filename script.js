@@ -1,7 +1,7 @@
 $(function() {
     var isMobile = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
     if (isMobile) {
-        $('.modal-content').css('margin', '40% auto');
+        $('.modal-content').css('margin', '35% auto');
     }
 });
 
