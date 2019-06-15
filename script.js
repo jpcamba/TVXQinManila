@@ -1,3 +1,16 @@
+$(function() {
+    var isMobile = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+    if (isMobile) {
+        $('.modal-content').css('margin', '40% auto');
+    }
+});
+
+$(document).click(function(event) {
+    if (event.target.id === 'seat-view') {
+        $('#seat-view').css('display', 'none');
+    }
+});
+
 function displaySeatView(section) {
     $('#seat-view').css('display', 'block');
     
@@ -10,18 +23,11 @@ function displaySeatView(section) {
     $('#carousel-images').html(html);
 }
 
-$(document).click(function(event) {
-    if (event.target.id === 'seat-view') {
-        $('#seat-view').css('display', 'none');
-    }
-});
-
 function getImagePath(section, filename) {
     return './media/seat-view/' + section + '/' + filename;
 }
 
 function getImageHtml(link, source, isActive) {
-    console.log(isActive);
     var html = '<div class="carousel-item';
     html += isActive ? ' active">' : '">';
     html += '<img class="w-70" src="' + link + '" /><br />';
