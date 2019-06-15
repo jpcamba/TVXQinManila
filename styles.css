@@ -25,9 +25,9 @@ html, body {
 .modal-content {
     background-color: black !important;
     border: 1px solid #888;
-    margin: 7% auto;
+    margin: 5% auto;
     padding: 20px;
-    width: 70% !important;
+    width: 60% !important;
     animation-name: animatetop;
     animation-duration: 0.4s;
 }

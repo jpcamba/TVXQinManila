@@ -36,7 +36,7 @@ function getImagePath(section, filename) {
 function getImageHtml(link, source, isActive) {
     var html = '<div class="carousel-item';
     html += isActive ? ' active">' : '">';
-    html += '<img class="w-70" src="' + link + '" /><br />';
+    html += '<img class="w-60" src="' + link + '" /><br />';
     html += '<span style="color:white;font-family:Verdana;font-size:20px;">Source: ';
     html += '<a href="' + source + '">' + source + '</a></span>';
     html += '</div>';
